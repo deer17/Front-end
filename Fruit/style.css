@@ -1,0 +1,27 @@
+p
+{
+    background-color: #C56275;
+    border: solid   #ED9EAE 15px;
+    width: 550px;
+    color: white;
+    font-size: 25px;
+   padding-left: 20px;
+   padding-top: 3px;
+    height: 50px;
+    margin: 0px;
+    margin-left: 10px;
+    border-width: 20px;
+    letter-spacing: 1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+span
+{
+    background-color: #9E354A;
+    padding-top: 3px;
+    padding-bottom: 16px;
+    padding-right: 50px;
+    padding-left: 25px;
+    margin-left: 10px;
+}

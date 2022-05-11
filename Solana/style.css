@@ -1,0 +1,93 @@
+@font-face{
+    src: url(./fonts/Oswald-Light-webfont.woff);
+    font-family: OswaldLight;
+}
+
+body
+{
+    background-color: whitesmoke;
+}
+
+.container
+{
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+}
+.menu
+{
+    height: 74px;
+    background-color: #414146;
+    display: flex;
+}
+.logo-container
+{
+    width: 40%;
+    background-color: #414146;
+    display: flex;
+    align-items: center;
+}
+.logo-container img
+{
+    width: 100px;
+    margin-left: 40px;
+}
+
+.menu-items
+{
+    width: 45%;
+    background-color: #414146;
+}
+.menu-items ul
+{
+    display: flex;
+    color: white;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.menu-items ul li 
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    padding: 0px 22px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.menu-items ul li :hover
+{
+     background-color: #ffea00;
+     cursor: pointer;
+}
+.menu-items ul li a 
+{
+    color: white;
+    text-decoration: none;
+    font-family: Oswald-Light;
+    text-transform: uppercase;
+}
+.menu-items ul li:hover a
+{
+    color: #414146;
+}
+.search
+{
+    width: 15%;
+    background-color: #565a60;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+}
+.search img
+{
+    width: 15px;
+    height: 15px;
+}

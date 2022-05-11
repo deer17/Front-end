@@ -1,0 +1,32 @@
+h2
+{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+text-align: center;
+}
+img
+{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    
+}
+p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.fruit
+{
+    border: solid 2px #C7C7C7;
+    border-radius: 10px;
+    width: 140px;
+    margin: 20px;
+}
+.container
+{
+    display:flex;
+    flex-wrap: wrap;
+    
+
+}
