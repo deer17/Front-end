@@ -1,0 +1,57 @@
+
+$dark-brown:#593825;
+$orange: #BF7B54;
+$light-brown:#8C6E5D;
+$brown:#BFA595;
+$whitesmoke: #F2E4DF;
+
+.container
+{
+    max-width: 1800px;
+    margin: auto;
+}
+
+header
+{
+    height: 200px;
+    background-color: $dark-brown;
+    display: flex;
+    align-items: flex-end;
+    nav 
+    {
+        height: 30%;
+        width: 100%;
+        background-color: $brown;
+        ul 
+        {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            li
+            {
+                 padding: 20px;
+                 &:hover
+                 {
+                     background-color: $orange;
+                     color: $whitesmoke;
+                 }
+            }
+        }
+    }
+}
+main
+{
+    height: 600px;
+    background-color: $light-brown;
+}
+footer
+{
+    height: 100px;
+    background-color: $orange;
+}
+@media(max-width:930px)
+{
+
+}

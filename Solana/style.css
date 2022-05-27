@@ -2,18 +2,20 @@
     src: url(./fonts/Oswald-Light-webfont.woff);
     font-family: OswaldLight;
 }
-
 body
 {
     background-color: whitesmoke;
+    background-image: url(./slider-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    font-family: OswaldLight;
+    
 }
-
 .container
 {
     width: 1000px;
     height: 1000px;
     margin: auto;
-    background-color: white;
     margin-top: 20px;
 }
 .menu
@@ -34,7 +36,6 @@ body
     width: 100px;
     margin-left: 40px;
 }
-
 .menu-items
 {
     width: 45%;
@@ -56,7 +57,6 @@ body
     height: 100%;
     width: 20%;
     display: flex;
-    padding: 0px 22px;
     align-items: center;
     justify-content: center;
     color: white;
@@ -70,8 +70,8 @@ body
 {
     color: white;
     text-decoration: none;
-    font-family: Oswald-Light;
     text-transform: uppercase;
+    padding: 25px 15px;
 }
 .menu-items ul li:hover a
 {
@@ -91,3 +91,144 @@ body
     width: 15px;
     height: 15px;
 }
+.slider
+{
+    display: flex;
+    padding: 30px 0;
+    
+}
+.slider-text
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.slider-image
+{
+    width: 40%;
+}
+.slider-text h1{
+color: #414146;
+background-color: #ffea00;
+padding: 5px 10px;
+font-weight: normal;
+}
+.slider-text h2
+{
+    background-color: #565A60;
+    color: white;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.slider-text .read-more-btn
+{
+    background-color: #414146;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.slider-text .read-more-btn p
+{
+    margin: 0;
+    padding: 5px 10px;
+}
+.slider-text .read-more-btn img
+{
+    background-color: #ffea00;
+    margin: 0;
+    padding: 10px 10px; 
+}
+.services
+{
+    
+    height: 252px;
+    display: flex;
+
+}
+.service
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.service img
+{
+    box-sizing: border-box;
+    height: 70px ;
+    transition: 0.5s;
+}
+.service .read-more-btn  :hover
+{
+     background-color: #ffea00;
+     cursor: pointer;
+}
+.service:nth-child(1)
+{
+   background-color: white;
+}
+.service:nth-child(2)
+{
+    background-color: hsl(55, 100%, 50%);
+}
+.service:nth-child(3)
+{
+    background-color: hsl(55, 100%, 40%);
+}
+.service:nth-child(4)
+{
+    background-color: hsl(55, 100%, 30%);
+}
+.services .service h1
+{
+    font-size: 20px;
+    padding: -1px 53px;
+}
+.services .service h2
+{
+  margin-right: 112px;
+}
+.services .service .normal
+{
+    font-weight: normal;
+    margin: 1px;
+    padding-right: 42px;
+}
+
+.service:hover
+{
+    background-color: white;
+  
+}
+
+.service .read-more-btn
+{
+    background-color: #414146;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    
+}
+.service .read-more-btn p
+{
+    margin: 3px 0px 3px 0px;
+    padding: 7px 10px;
+}
+.service .read-more-btn img
+{
+    height: 36px;
+    background-color: #ffea00;
+    margin: 0;
+    padding: 10px 10px; 
+    
+}
+
+

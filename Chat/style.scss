@@ -1,0 +1,76 @@
+.container
+{
+    margin: auto;
+    background-color: #F5F5F5;
+    width: 1000px;
+    height: 800px;
+    display: grid;
+    grid-template: repeat(6,1fr)/repeat(3,1fr);
+}
+
+.table
+{
+    display: flex;
+   
+}
+
+small
+{
+    color: #9C9B9E;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.girl:nth-child(5)
+{
+grid-row: 3;
+grid-column: 1;
+}
+.girl:nth-child(9)
+{
+grid-row: 5;
+grid-column: 1;
+}
+.girl:nth-child(4)
+{
+grid-row:2 ;
+grid-column: 3;
+}
+.boy:nth-child(8)
+{
+grid-row: 4;
+grid-column: 3;
+}
+.boy:nth-child(12)
+{
+grid-row: 6;
+grid-column: 3;
+}
+
+text
+{
+    p
+    {
+        background-color: #FFB6C1;
+        width: 200px;
+        height: 70px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+.text:nth-child(2n)
+{
+    background-color: #FFB6C1;
+    border-end-start-radius: 0px;
+}
+.text:nth-child(2n+1)
+{
+    background-color: #ADD8E6;
+    border-end-end-radius: 0px;
+}
+.girl-img
+{
+    width: 30px;
+}
+.boy-img
+{
+    width: 30px;
+}

@@ -1,0 +1,39 @@
+.container {
+  width: 1000px;
+  height: 1000px;
+}
+
+.container h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.banner-img {
+  width: 1500px;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5F5F5;
+  width: 1500px;
+  height: 2000px;
+}
+
+.container2 .description {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container2 .description h2 {
+  font-size: 20px;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,141 @@
+.container
+{
+   
+    margin: auto;
+    display: flex;
+
+}
+.enterprise
+{
+    background-color: #FFFFFF;
+    border: solid #FFFFFF 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px #000000;
+    font-weight: bold ;
+    width: 200px;
+    margin-right: 20px;
+}
+.professional
+{
+    background-color: #FFFFFF;
+    border: solid #FFFFFF 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px #000000;
+    font-weight: bold ;
+    width: 200px;
+    margin-right: 20px;
+}
+.standard
+{
+    background-color: #FFFFFF;
+    border: solid #FFFFFF 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px #000000;
+    font-weight: bold ;
+    width: 200px;
+    margin-right: 20px;
+}
+.basic
+{
+    background-color: #FFFFFF;
+    border: solid #FFFFFF 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px #000000;
+    font-weight: bold ;
+    width: 200px;
+}
+
+h3
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.grey
+{
+    color: #D7D7D7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+b
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+p
+{
+    text-align: center;
+}
+.red
+{
+   width :100%;
+   border: solid #C52C4E 1px;
+}
+.yellow
+{
+   width :100%;
+   border: solid #D7913B 1px;
+}
+.blue
+{
+   width :100%;
+   border: solid #2B6689 1px;
+}
+.green
+{
+   width :100%;
+   border: solid #63BB34 1px;
+}
+.red-btn
+{
+    background-color: #C73756;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 55px;
+}
+.yellow-btn
+{
+    background-color: #D7913B;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 55px;
+}
+.blue-btn
+{
+    background-color: #2B6689;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 55px;
+}
+.green-btn
+{
+    background-color: #63BB34;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 55px;
+}
+

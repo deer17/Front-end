@@ -1,0 +1,17 @@
+body
+{
+    /* background-color: #F5F5F5;
+    width: 500px;
+    height: 500px;
+    margin: auto; */
+}
+td
+{
+    width: 100px;
+    height: 100px;
+    
+}
+td:nth-child(2n)
+{
+    background-color: #F5F5F5;
+}

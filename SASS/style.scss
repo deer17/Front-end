@@ -1,0 +1,42 @@
+.box
+{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition-duration: 1s;
+//    transition-delay: 2s;
+   transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover
+    {
+        background-color: red;
+        transform: translateX(500px);
+    }
+}
+@keyframes test-animation
+{
+    from 
+    {
+        background-color: red;
+    }
+    to 
+    {
+        background-color: green;
+    }
+}
+
+.test
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    animation: test-animation;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+   
+    &:hover
+    {
+        animation-play-state: paused;
+    }
+}
+
