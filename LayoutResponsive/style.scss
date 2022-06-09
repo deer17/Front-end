@@ -1,57 +1,179 @@
-
-$dark-brown:#593825;
-$orange: #BF7B54;
-$light-brown:#8C6E5D;
-$brown:#BFA595;
-$whitesmoke: #F2E4DF;
-
+body
+{
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+}
 .container
 {
-    max-width: 1800px;
+    max-width: 1600px;
     margin: auto;
 }
+$brown:#8C7268;
+$pink:#FFCFBC;
+$light-brown:#D1A18E;
+$grey:#878787;
+$ligth-grey:#BDCFCC;
 
+*{
+    box-sizing: border-box;
+}
 header
 {
     height: 200px;
-    background-color: $dark-brown;
+    background-color: $brown;
     display: flex;
     align-items: flex-end;
-    nav 
+    flex-direction: column;
+    justify-content: space-between;
+    .logo
+    {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+        .menu-btn
+        {
+            display: none;
+            height: 30px;
+        }
+    }
+    nav
     {
         height: 30%;
         width: 100%;
-        background-color: $brown;
+        background-color: $light-brown;
         ul 
         {
+            height: 100%;
             display: flex;
             list-style: none;
-            margin: 0;
             padding: 0;
+            margin: 0;
             align-items: center;
-            li
+            color: $pink;
+
+            li 
             {
-                 padding: 20px;
-                 &:hover
-                 {
-                     background-color: $orange;
-                     color: $whitesmoke;
-                 }
+                color:white;
+                padding: 20px;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                &:hover
+                {
+                    background-color: #BDCFCC ;
+                 
+                }
             }
         }
     }
 }
 main
 {
-    height: 600px;
-    background-color: $light-brown;
+    
+    background-color: $pink;
+    display: flex;
+    min-height: calc(100vh- 100px -200px);
+    aside 
+    {
+        width: 30%;
+        height: 100%;
+        background-color: $grey;
+        ul 
+        {
+            padding: 20px;
+            list-style: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            li 
+            {
+                padding: 5px 0;
+            }
+        }
+    }
+    section 
+    {
+        width: 70%;
+        height: 100%;
+        background-color: $pink;
+        padding: 50px 20px;
+        .gallery
+        {
+            width: 100%;
+            display: grid;
+            grid-template: 150px 150px / 1fr 1fr 1fr;
+            gap: 10px;
+             @media (max-width: 1100px)
+             {
+                grid-template: repeat(3, 150px) / 1fr 1fr;
+             }
+             @media (max-width:950px)
+             {
+                 grid-template: (2,150px)/ 1fr 1fr;
+             }
+             @media (max-width:700px)
+             {
+                 grid-template: 150px 150px 150px / 1fr 1fr;
+             }
+             @media (max-width:500px)
+             {
+                 grid-template: repeat(6, 150px) /1fr;
+             }
+
+            img 
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
 footer
 {
     height: 100px;
-    background-color: $orange;
+    background-color: $ligth-grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
 }
-@media(max-width:930px)
+@media(max-width:821px)
 {
-
+    header 
+    {
+        height: auto;
+        .logo .menu-btn
+        {
+            display: inline;
+        }
+        nav
+        {
+            ul 
+            {
+                flex-direction: column;
+                align-items: flex-start;
+                li 
+                {
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+    main 
+    {
+       flex-direction: column;
+       aside , section 
+       {
+           width: 100%;
+           height: 50%;
+       }
+    }
 }

@@ -1,3 +1,7 @@
+body
+{
+    margin: 0;
+}
 .container
 {
     background-color: black;
@@ -10,7 +14,7 @@
     width: 100%;
     position: fixed;
     background-color: black;
-   
+   z-index: 10;
 }
 .main .logo h1
 {
@@ -41,8 +45,7 @@
 }
 .logo
 {
-    width: 30%;
-    
+    width: 30%;   
 }
 .menu-items
 {
@@ -63,8 +66,7 @@
 .slider
 {
    display: flex; 
-   background-color: black;
-  
+   background-color: black; 
 }
 .slider-text
 {
@@ -97,22 +99,16 @@
     margin-left: 110px;
     margin-right: 270px;
     text-align: center;
-    padding-top: 20px;
-
-    
+    padding-top: 20px;   
 }
-
 .hero
-{
-    
+{   
  height: 900px; 
- 
 }
 .slider-image
 {
     display: flex;
-    width: 60%;
-    
+    width: 60%;   
 }
 .table
 {
@@ -127,9 +123,8 @@
 .chart-bars
 {
     background-color: #E9204F;
-    width: 350px;
-    height: 400px;
-    
+    width: 400px;
+    height: 400px;   
 }
 .table p
 {
@@ -148,20 +143,46 @@ h3
 .rocket
 {
     background-color: #1B1B1B;
-    width: 350px;
+    width: 400px;
     height: 400px;
-   
+    transition: 0.8s;  
 }
 .rocket:hover
 {
     background-color: #E9204F;
     transition: 0.8s;
 }
+.rocket .rocket-img
+{
+    transition: 0.8s;
+}
+.rocket-img
+{
+    width: 40px;
+    height: 40px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.rocket:hover .rocket-img
+{  
+    content: url("./shuttle.png");
+    width: 40px;
+    height: 40px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 70px;   
+}
 .pie-chart
 {
     background-color:#1B1B1B;
-    width: 350px;
+    width: 400px;
     height: 400px;
+    transition: 0.8s;
+}
+.pie-chart .piechart-img
+{
+    transition: 0.8s;
 }
 .pie-chart:hover
 {
@@ -176,7 +197,7 @@ h3
     padding-top: 30px;
     padding-bottom: 70px;
 }
-.rocket-img
+.piechart-img
 {
     width: 40px;
     height: 40px;
@@ -184,13 +205,9 @@ h3
     padding-top: 30px;
     padding-bottom: 70px;
 }
-.rocket-img:hover
+.pie-chart:hover .piechart-img
 {
-  
-}
-
-.piechart-img
-{
+    content: url("./pie-chart-white.png");
     width: 40px;
     height: 40px;
     padding-left: 40px;
@@ -200,7 +217,6 @@ h3
 .service
 {
     background-color: white;
-
 }
 .header h2
 {
@@ -228,19 +244,16 @@ h5
 .category
 {
     display: grid;
-    grid-template: repeat(3,1fr)/repeat(3,1fr);
-    
+    grid-template: repeat(3,1fr)/repeat(3,1fr);  
 }
 .block
 {
-    
     display: flex;
     background-color: #F3F3F3;
     width: 340px;
     height: 100px;
     padding: 10px 20px 20px 30px;
     margin: 10px;
-    /* margin-left: 152px; */
 }
 .block:hover
 {
@@ -252,12 +265,409 @@ h5
     width: 30px;
     height: 30px;
      display: flex;
-
+}
+.description .article h2
+{
+    position: relative;
+    top: 270px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    padding-left: 157px;
+}
+.description .article h4
+{
+    position: relative;
+    top: 240px;
+    color: #E9204F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding-left: 157px;
+}
+.works
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 240px;   
+}
+.view
+{
+    position: relative;
+    top: 260px;
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid #E9204F;
+    width: 140px;
+    text-align: center;
+}
+.view p 
+{
+    color: black;
+}
+.products
+{
+    display:flex;
+    position: relative;
+    top: 270px;
+    justify-content: space-between; 
+    display: grid;
+    grid-template-columns: repeat(6, 33%);
+    grid-column-gap: 5px;
+   
+}
+.hover-effect-scale li .product-design-img
+{
+    width: 480px;
+    height: 480px; 
+    filter: grayscale(100%);
+}
+.hover-effect-scale:hover li .product-design-img
+{
+    filter: grayscale(0);
+}
+.hover-effect-scale
+{
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.hover-effect-scale li 
+{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+}
+.hover-effect-scale li h2 ,p
+{
+    color: white;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hover-effect-scale li a
+{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.hover-effect-scale li a:hover
+{
+    background: #454545;
+    color: #fff;
+}
+.hover-effect-scale li > div
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-scale li:hover > div {
+    position: absolute; 
+     overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-scale li img
+{
+    transition: all 0.2s linear;
+}
+.hover-effect-scale li:hover img 
+{
+    transform: scale(1.2);
 }
 
+.hover-effect-scale li:hover div {
+    opacity: 1;
+}
+.woody .woody-img
+{
+    width: 480px;
+    height: 480px;
+    filter: grayscale(100%);
+}
+.woody .woody-img:hover
+{
+    filter: grayscale(0);
+}
+.hover-effect-scale li .woody-img
+{
+    width: 480px;
+    height: 480px; 
+    filter: grayscale(100%);
+}
+.hover-effect-scale:hover li .woody-img
+{
+    filter: grayscale(0);
+}
 
+.interior-design .interior-design-img
+{
+    width: 480px;
+    height: 480px;
+   filter: grayscale(100%);
+}
+.interior-design-img:hover
+{
+    filter: grayscale(0);
+}
+.hover-effect-scale li .interior-design-img
+{
+    width: 480px;
+    height: 480px; 
+    filter: grayscale(100%);
+}
+.hover-effect-scale:hover li .interior-design-img
+{
+    filter: grayscale(0);
+}
+.electrica .electrica-img
+{
+    width: 480px;
+    height: 480px;
+    filter: grayscale(100%);
+}
+.electrica .electrica-img:hover
+{
+    filter: grayscale(0);
+}
+.hover-effect-scale li .electrica-img
+{
+    width: 480px;
+    height: 480px; 
+    filter: grayscale(100%);
+}
+.hover-effect-scale:hover li .electrica-img
+{
+    filter: grayscale(0);
+}
+.home-design .home-design-img
+{
+    width: 480px;
+    height: 480px;
+    filter: grayscale(100%);
+}
+.home-design .home-design-img:hover
+{
+    filter: grayscale(0);
+}
+.hover-effect-scale li .home-design-img
+{
+    width: 480px;
+    height: 480px; 
+    filter: grayscale(100%);
+}
+.hover-effect-scale:hover li .home-design-img
+{
+    filter: grayscale(0);
+}
+.biker .biker-img
+{
+    width: 480px;
+    height: 480px;
+    filter: grayscale(100%);
+}
+.biker .biker-img:hover
+{
+    filter: grayscale(0);
+}
+.hover-effect-scale li .biker-img
+{
+    width: 480px;
+    height: 480px; 
+    filter: grayscale(100%);
+}
+.hover-effect-scale:hover li .biker-img
+{
+    filter: grayscale(0);
+}
+.agency
+{
+    display: flex;
+    justify-content: space-between;
+}
+.agency-description h2 
+{
+    position: relative;
+    top: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    margin-left: 160px;
+}
+.agency-description h4
+{
+    color: #E9204F;
+    margin-left: 160px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 570px;
+}
+.agency-description p
+{
+    color: #747474;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 640px;
+    margin-left: 240px;
+}
+.agency-description
+{
+    display: flex;
+}
+.about-office
+{
+    display: flex;
+    position: relative;
+    top: 590px;
+    margin-left: 120px;
+    justify-content: space-between;
+    
+}
+.teamwork
+{
+    display: flex;
+}
+.teamwork .teamwork-img
+{
+    width: 750px;
+    height: 620px;
+    filter: grayscale(100%);
+    margin-left: 40px;
+}
+.teamwork .teamwork-img:hover
+{
+    filter: grayscale(0);
+}
 
-
-
-
+.philosophy .philosophy-img
+{
+    width: 410px;
+    height: 300px;
+    filter: grayscale(100%);
+}
+.philosophy .philosophy-img:hover
+{
+    filter: grayscale(0);
+}
+.office .office-img
+{
+    width: 410px;
+    height: 300px;
+    filter: grayscale(100%);
+}
+.office .office-img:hover
+{
+    filter: grayscale(0);
+}
+.effect-scale
+{
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.effect-scale li 
+{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+}
+.effect-scale li h2 ,p
+{
+    color: white;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.effect-scale li > div
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+}
+.effect-scale li:hover > div {
+    position: absolute; 
+     overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.text-description
+{
+    display: flex;
+    position: relative;
+    top: 640px;
+    justify-content: space-between;
+}
+.heading-title h2
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 160px;
+}
+.heading-title p 
+{
+    color: #74747D;
+    margin-left: 160px;
+    font-size: 17px;
+}
+.client-elementor
+{
+    display: flex;
+}
+.client-image
+{
+    display: flex;
+    position: relative;
+    top: 900px;
+    margin-left: 160px;
+}
+.client-img
+{
+    width: 450px;
+    height: 600px;
+}
+ .client-say h2
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    position: relative;
+    top: 910px;
+    margin-left: 70px;
+}
+.client-say h4
+{
+    color: #E9204F;
+    position: relative;
+    top: 880px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 70px;
+}
+.client-say p 
+{
+    color: #747474;
+    position: relative;
+    top: 940px;
+    margin-left: 70px;
+    font-size: 27px;
+}
+.client-say h6
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+    position: relative;
+    top: 970px;
+    font-size: 17px;
+}
 

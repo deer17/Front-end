@@ -1,53 +1,211 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+
 .container {
-  max-width: 1800px;
+  max-width: 1600px;
   margin: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
   height: 200px;
-  background-color: #593825;
+  background-color: #8C7268;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .logo .menu-btn {
+  display: none;
+  height: 30px;
 }
 
 header nav {
   height: 30%;
   width: 100%;
-  background-color: #BFA595;
+  background-color: #D1A18E;
 }
 
 header nav ul {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #FFCFBC;
 }
 
 header nav ul li {
+  color: white;
   padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header nav ul li:hover {
-  background-color: #BF7B54;
-  color: #F2E4DF;
+  background-color: #BDCFCC;
 }
 
 main {
-  height: 600px;
-  background-color: #8C6E5D;
+  background-color: #FFCFBC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: calc(100vh- 100px -200px);
+}
+
+main aside {
+  width: 30%;
+  height: 100%;
+  background-color: #878787;
+}
+
+main aside ul {
+  padding: 20px;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main aside ul li {
+  padding: 5px 0;
+}
+
+main section {
+  width: 70%;
+  height: 100%;
+  background-color: #FFCFBC;
+  padding: 50px 20px;
+}
+
+main section .gallery {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 150px 150px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 150px 150px / 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 1100px) {
+  main section .gallery {
+    -ms-grid-rows: (150px)[3];
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: repeat(3, 150px)/1fr 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  main section .gallery {
+    -ms-grid-rows: 2;
+    -ms-grid-columns: 150px;
+        grid-template: 2, 150px/1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  main section .gallery {
+    -ms-grid-rows: 150px 150px 150px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 150px 150px 150px / 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  main section .gallery {
+    -ms-grid-rows: (150px)[6];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(6, 150px)/1fr;
+  }
+}
+
+main section .gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
   height: 100px;
-  background-color: #BF7B54;
+  background-color: #BDCFCC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 821px) {
+  header {
+    height: auto;
+  }
+  header .logo .menu-btn {
+    display: inline;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main aside, main section {
+    width: 100%;
+    height: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

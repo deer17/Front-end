@@ -1,0 +1,89 @@
+.container {
+  margin: auto;
+  background-color: #014242;
+  width: 1000px;
+  height: 600px;
+}
+
+.paragraph p {
+  color: #73858A;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding-left: 80px;
+  padding-top: 80px;
+}
+
+.adaptive-design h2 {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  margin: 10px;
+  padding-left: 70px;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 80px;
+  padding-top: 30px;
+}
+
+.description .logo-image img {
+  width: 65px;
+  height: 65px;
+  padding-right: 30px;
+}
+
+.description .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+  .description .text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+  }
+}
+
+@media (max-width: 500) {
+  .description .text .info p {
+    padding-right: 10px;
+  }
+  .description .text .info small {
+    padding-right: 10px;
+  }
+}
+
+.description .text .info {
+  list-style: none;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.description .text small {
+  color: #73858A;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+}
+
+.description .text p {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */

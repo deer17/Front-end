@@ -1,0 +1,15 @@
+.site-logo {
+  height: 30px;
+}
+
+.custom-carousel img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
