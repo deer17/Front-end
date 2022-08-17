@@ -1,0 +1,145 @@
+
+@font-face
+{
+  src: url(./fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2);
+  font-family: Helvetica;
+}
+@font-face
+{
+  src: url(./fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2);
+  font-family: Helvetica2;
+}
+@font-face
+{
+  src: url(./fonts/h5u.woff);
+  font-family: Helvetica3;
+}
+.header
+{
+    img
+    {
+        width: 100%;
+        height: 1000px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 790px;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+    }
+}
+.btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+    letter-spacing: 1px;
+   font-family: Helvetica;
+   border-radius: 3px #A9AEC0 ;
+   border: 3px solid #A9AEC0;
+}
+button
+{
+  padding-left: 15px !important;
+  padding-right: 23px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+ .option-img
+ {
+  width: 13px;
+  height: 13px;
+  position: relative;
+  top: -2px;
+  left: 6px;
+ }
+}
+*{
+    margin: 0% !important;
+    padding: 0% !important;
+}
+// .header::after
+// {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: -20%;
+//   z-index: -1;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #4545a0;
+//   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+// }
+
+
+.modal-content{
+  background-color: red !important;
+  width: 100px;
+  position: absolute;
+    top: 10px;
+    right: calc((100%-100px)/2);
+  a{
+    text-decoration: none !important;
+  }
+}
+.design1
+{
+ width: 100%;
+ height: 370px;
+ position: relative;
+ top: 711px;
+background-color: #5F73BC;
+
+.triangle-left1
+{
+position: relative;
+top: -90px;
+// border-top: 90px solid transparent;
+// border-right: 1518px solid #5F73BC;
+// border-bottom:  370px solid transparent;
+
+.elements
+{
+  display: flex;
+  
+  .text
+  {
+    h2 
+    {
+      font-family: Helvetica;
+      color: white;
+      font-size: 20px;
+      letter-spacing: 1px;
+      position: relative;
+      left: 690px;
+      top: 170px;
+    }
+    .hr-horizontal-gradient
+{
+    width: 500px;
+    height: 2px;
+    position: relative;
+    top: 110px;
+    left: 470px;
+    border: 1px solid #8FA4EF;
+    background-color: #8FA4EF;
+}
+  }
+}
+}
+}
+.triangle-left2
+{
+  position: relative;
+top: -120px;
+// border-top: 30px solid transparent;
+// border-right: 1518px solid #5F73BC;
+// border-bottom:  100px solid transparent;
+}
+
+
+
+

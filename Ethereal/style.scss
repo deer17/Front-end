@@ -1,0 +1,357 @@
+body
+{
+    background-color: #DFD7DD;
+    width: max-content;
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(./fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu\\1\.woff2);
+    font-family: HelveticaT;
+    src: url(./fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2);
+}
+.container
+{
+    display: flex;
+    padding-left: 80px;
+    padding-top: 60px;
+    .girl
+    {
+      .girl-img
+        {
+            width: 300px;
+            height: 560px;
+            mix-blend-mode: multiply;
+        }
+    }
+    .spectrum-background
+    {
+        position: relative;
+        left: -2px;
+        width: 630px;
+        height: 560px;
+       background: -webkit-linear-gradient(45deg, #6E5D8E ,#86658C,#AE6D81,#DF797A,#E79C8D,#F6D5AB);
+       margin: 0;
+       h1
+       {
+           font-family: Helvetica;
+           color: white;
+           font-size: 50px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 50px;
+            top: 100px;
+        }
+        .hr-horizontal-gradient
+        {
+            width: 60px;
+            position: relative;
+            top: 120px;
+            right: 234px;
+            border: 1px solid #AA8DAA;
+            background-color: #AA8DAA;
+        }
+        p
+        {
+            font-family: HelveticaT;
+            color: #E7D5DC;
+            position: relative;
+            top: 140px;
+            left: 49px;
+            span
+            {
+                border-bottom: 1px dotted #E7D5DC;
+            }
+        }
+        a
+        {
+            .greater-img
+            {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                top: 160px;
+                left: 50px;
+            }
+        }
+    }
+    .boy
+    {
+        position: relative;
+     
+        .boy-img
+        {
+            position: relative;
+            left: -2px;
+            width: 850px;
+            height: 560px ;
+            mix-blend-mode: multiply;
+        }
+        h2
+        {
+            position:absolute;
+            top: 140px;
+            width: 100%;
+            color: white;
+            font-family: Helvetica;
+            font-size: 30px;
+            right: -323px;
+        }
+        .hr-horizontal-gradient
+        {
+
+            width: 60px;
+            position: relative;
+            top: -350px;
+            right: 70px;
+            border: 1px solid #D3C9CA;
+            background-color: #D3C9CA;
+        }
+        p
+        {
+            color: white;
+            font-family: Helvetica;
+            position: relative;
+            top: -340px;
+            right: -323px;
+            font-size: 15px;
+        }
+    }
+    .settings
+    {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        left: -2px;
+        width: 800px;
+        height: 560px;
+       background: -webkit-linear-gradient(45deg, #716092 ,#6E5E8E,#86648B,#8F6D8F,#917C96,#927E97);
+       margin: 0;
+       .lorem-text
+       {
+        .hr-horizontal-gradient
+        {
+            width: 60px;
+            position: relative;
+            top: 60px;
+            right: 164px;
+            border: 1px solid #9888AA;
+            background-color: #9888AA;
+        }
+        p
+        {
+            font-family: Helvetica;
+            color: #DCD7E1;
+            position: relative;
+            top: 70px;
+            right: 70px;
+            font-size: 15px;
+            margin: 10px;
+        }
+        h2
+        {
+            color: white;
+            font-family: Helvetica;
+            position: relative;
+            top: 60px;
+            right: 60px;
+            font-size: 27px;
+        }
+        .hr-horizontal
+        {
+            .hr-horizontal-gradient1
+            {
+                width: 22px;
+                position: relative;
+                top: -120px;
+                right: -229px;
+                border: 1px solid #AB91AB;
+                background-color: #AB91AB;
+            }
+            .hr-horizontal-gradient2
+            {  
+                width: 21px;
+                position: relative;
+                top: -130px;
+                right: -335px;
+                border: 1px solid #AB91AB;
+                background-color: #AB91AB;
+            }
+            .hr-horizontal-gradient3
+            {   
+                width: 21px;
+                position: relative;
+                top: -30px;
+                right: -335px;
+                border: 1px solid #AB91AB;
+                background-color: #AB91AB;
+            }
+            .hr-horizontal-gradient4
+            { 
+                width: 21px;
+                position: relative;
+                top: -40px;
+                right: -230px;
+                border: 1px solid #AB91AB;
+                background-color: #AB91AB;
+            }            
+        }
+        .hr-vertical
+        {
+            .hr-vertical-gradient1
+            {
+                border: 0px solid #AB91AB;
+                background-color: #AB91AB;
+                width: 2px;
+                height: 22px;
+                position: relative;
+                top: -115px;
+                right: -176px;
+            }
+            .hr-vertical-gradient2
+            {
+                border: 0px solid #AB91AB;
+                background-color: #AB91AB;
+                width: 2px;
+                height: 22px;
+                position: relative;
+                top: -146px;
+                right: -283px;
+            }
+            .hr-vertical-gradient3
+            {
+                border: 0px solid #AB91AB;
+                background-color: #AB91AB;
+                width: 2px;
+                height: 22px;
+                position: relative;
+                top: -176px;
+                right: -388px;
+            }
+        }
+       }
+       .icon-image
+       {
+      display: grid;
+      grid-template: repeat(3,1fr)/ repeat(3,1fr);
+      gap: 20px;
+      position: relative;
+      top: 50px;
+      text-align: center;
+        .circle
+        {
+            border-radius: 50%;
+            border: solid 3px #AB91AB;
+            width: 80px;
+            height: 80px;
+        }
+        img
+        {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 20px;
+        }
+       }
+    }
+    .tattoo-girl
+    {
+        position: relative;
+        
+        .tattoo-img
+        {
+            
+            width: 1130px;
+            height: 560px;
+            position: relative;
+            right: 2px;
+            mix-blend-mode: multiply;
+            
+        }
+      
+        h2 
+        {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            position: relative;
+            top: -430px;
+            left: 50px;
+        }
+        .hr-horizontal-gradient
+        {
+            width: 60px;
+            position: relative;
+            top: -430px;
+            left: -484px;
+            border: 1px solid grey;
+            background-color: grey;
+        }
+        p 
+        {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: relative;
+            top: -420px;
+            left: 50px;
+        }
+    }
+    .integer
+    {
+        width: 350px;
+        height: 560px;
+        position: relative;
+        left: -2px;
+        background: -webkit-linear-gradient(45deg, #C47280 ,#C7737F,#DE7879,#E1817E,#E48882,#E49086);
+        h2 
+        {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            position: relative;
+            left: 50px;
+            top: 150px;
+        }
+        .hr-horizontal-gradient
+        {
+            width: 60px;
+            position: relative;
+            left: -93px;
+            top: 150px;
+            border: 1px solid #E3999B;
+            background-color: #E3999B;
+        }
+        p 
+        {
+            color: #EBDCDF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: relative;
+            left: 50px;
+            top: 160px;
+        }
+    }
+    .image-table1
+    {
+       display: grid;
+       width: 100%;
+       max-width: 750px;
+       margin: 0 auto;
+      
+       
+
+      .item1
+      {
+        // width: 450px;
+        // height: 290px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        mix-blend-mode: multiply;
+      }  
+           
+
+    }
+
+}
